@@ -1,33 +1,18 @@
-//get all inputs
 var userEmailSignin = document.getElementById("userEmailSignin");
 var userPasswordSignin = document.getElementById("userPasswordSignin");
-//get btn login
 var btnLogin = document.getElementById("btnLogin");
-
-//check if user enter a valid infos to login
-//get all inputs
 var userName = document.getElementById("userName");
 var userEmailSignup = document.getElementById("userEmailSignup");
 var userPasswordSignup = document.getElementById("userPasswordSignup");
-//get btn signup
 var btnSignup = document.getElementById("btnSignup");
 var dd = document.getElementById("dddddd");
-
 var showError = document.getElementById("showError");
-
 var showValid = document.getElementById("showValid");
 var showResult = document.getElementById("showResult");
 var showInvalid = document.getElementById("showInvalid");
 var showRequired = document.getElementById("showRequired");
-
-//check if user enter a valid name
-
 var regexName = /^[a-zA-Z ]{3,13}$/;
-
-//check if user enter a valid email
 var regexEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-
-//check if user enter a valid password(min 8 letter password, with at least a symbol, upper and lower case letters and a number)
 var regexPassword = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 var inputsObj = {};
 function validateSignup() {
@@ -91,7 +76,7 @@ function validateSignin() {
 var userWelcome = document.getElementsByClassName("welcome-user")[0];
 userWelcome.innerHTML = "Welcome " + getInputs.nameUser;
 function logoutUser() {
-  location.href = "signin.html";
+  location.href = "index.html";
 }
 var btnLogout = document.getElementsByClassName("btnLogout")[0];
 //show error result
